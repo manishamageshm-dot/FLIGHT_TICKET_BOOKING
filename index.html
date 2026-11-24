@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>✈ Flight Ticket Booking</h1>
+    <p>Book Your Journey With Us</p>
+
+    <form>
+        <label>Passenger Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number"
+               pattern="[0-9]{10}" required>
+
+        <div class="row">
+            <div>
+                <label>From</label>
+                <input type="text" placeholder="Departure city" required>
+            </div>
+            <div>
+                <label>To</label>
+                <input type="text" placeholder="Destination city" required>
+            </div>
+        </div>
+
+        <label>Departure Date</label>
+        <input type="date" required>
+
+        <label>Return Date</label>
+        <input type="date" required>
+
+        <label>Number of Passengers</label>
+        <input type="number" min="1" max="9" required>
+
+        <label>Travel Class</label>
+        <select required>
+            <option value="">Select Class</option>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+
+        <div class="buttons">
+            <button type="submit">Book Ticket</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
